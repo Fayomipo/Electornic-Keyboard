@@ -1,0 +1,586 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\Sirtom\AppData\Local\Temp\s368.obj
+end_init CODE 0 0 0 3 2
+config CONFIG 0 2007 2007 1 2
+$dist/default/production\Keyboard.X.production.obj
+cinit CODE 0 7EA 7EA 16 2
+text8 CODE 0 473 473 A 2
+text7 CODE 0 493 493 F 2
+text6 CODE 0 47D 47D A 2
+text5 CODE 0 4CB 4CB 1B 2
+text4 CODE 0 52F 52F 5E 2
+text3 CODE 0 4B3 4B3 18 2
+text2 CODE 0 4E6 4E6 49 2
+text1 CODE 0 58D 58D F8 2
+maintext CODE 0 685 685 165 2
+cstackCOMMON COMMON 1 70 70 8 1
+inittext CODE 0 4A2 4A2 11 2
+dataBANK0 BANK0 1 20 20 C 1
+bssCOMMON COMMON 1 78 78 6 1
+strings STRING 0 3 3 E2 2
+idataBANK0 CODE 0 487 487 C 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+BANK0 002C-006F 1
+BANK1 00A0-00EF 1
+BANK2 0110-016F 1
+BANK3 0190-01EF 1
+CODE 00E5-0472 2
+CODE 0800-1FFF 2
+CONST 00E5-0472 2
+CONST 0800-1FFF 2
+EEDATA 2100-21FF 2
+ENTRY 00E5-0472 2
+ENTRY 0800-1FFF 2
+IDLOC 2000-2003 2
+RAM 002C-006F 1
+RAM 00A0-00EF 1
+RAM 0110-016F 1
+RAM 0190-01EF 1
+SFR0 0000-001F 1
+SFR1 0080-009F 1
+SFR2 0100-010F 1
+SFR3 0180-018F 1
+STACK 0110-016F 1
+STRCODE 00E5-0472 2
+STRCODE 0800-1FFF 2
+STRING 00E5-0472 2
+STRING 0800-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <file name>:<line number> <address> <psect name> <class name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\Keyboard.X.production.obj
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\lib\LCDLIBRARY1.h":36 473 text8 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\lib\LCDLIBRARY1.h":38 473 text8 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\lib\LCDLIBRARY1.h":29 47D text6 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\lib\LCDLIBRARY1.h":31 47D text6 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\lib\LCDLIBRARY1.h":43 493 text7 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\lib\LCDLIBRARY1.h":45 493 text7 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\lib\LCDLIBRARY1.h":46 496 text7 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\lib\LCDLIBRARY1.h":47 49B text7 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\lib\LCDLIBRARY1.h":48 49E text7 CODE
+"C:\Users\Sirtom\AppData\Local\Temp\s368.":639 4A2 inittext CODE
+"C:\Users\Sirtom\AppData\Local\Temp\s368.":640 4A2 inittext CODE
+"C:\Users\Sirtom\AppData\Local\Temp\s368.":641 4A3 inittext CODE
+"C:\Users\Sirtom\AppData\Local\Temp\s368.":642 4A4 inittext CODE
+"C:\Users\Sirtom\AppData\Local\Temp\s368.":643 4A5 inittext CODE
+"C:\Users\Sirtom\AppData\Local\Temp\s368.":650 4A6 inittext CODE
+"C:\Users\Sirtom\AppData\Local\Temp\s368.":651 4A6 inittext CODE
+"C:\Users\Sirtom\AppData\Local\Temp\s368.":652 4A9 inittext CODE
+"C:\Users\Sirtom\AppData\Local\Temp\s368.":653 4AA inittext CODE
+"C:\Users\Sirtom\AppData\Local\Temp\s368.":654 4AB inittext CODE
+"C:\Users\Sirtom\AppData\Local\Temp\s368.":655 4AC inittext CODE
+"C:\Users\Sirtom\AppData\Local\Temp\s368.":656 4AD inittext CODE
+"C:\Users\Sirtom\AppData\Local\Temp\s368.":657 4AE inittext CODE
+"C:\Users\Sirtom\AppData\Local\Temp\s368.":658 4AF inittext CODE
+"C:\Users\Sirtom\AppData\Local\Temp\s368.":659 4B0 inittext CODE
+"C:\Users\Sirtom\AppData\Local\Temp\s368.":660 4B1 inittext CODE
+"C:\Users\Sirtom\AppData\Local\Temp\s368.":661 4B2 inittext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\lib\LCDLIBRARY1.h":199 4B3 text3 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\lib\LCDLIBRARY1.h":201 4B4 text3 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\lib\LCDLIBRARY1.h":202 4B8 text3 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\lib\LCDLIBRARY1.h":203 4BC text3 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\lib\LCDLIBRARY1.h":204 4C1 text3 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\lib\LCDLIBRARY1.h":205 4C7 text3 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\lib\LCDLIBRARY1.h":210 4CB text5 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\lib\LCDLIBRARY1.h":212 4CB text5 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\lib\LCDLIBRARY1.h":213 4CF text5 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\lib\LCDLIBRARY1.h":214 4D2 text5 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\lib\LCDLIBRARY1.h":215 4D7 text5 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\lib\LCDLIBRARY1.h":216 4DD text5 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\lib\LCDLIBRARY1.h":217 4E2 text5 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\lib\LCDLIBRARY1.h":53 4E6 text2 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\lib\LCDLIBRARY1.h":56 4E7 text2 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\lib\LCDLIBRARY1.h":58 4F3 text2 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\lib\LCDLIBRARY1.h":59 507 text2 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\lib\LCDLIBRARY1.h":60 513 text2 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\lib\LCDLIBRARY1.h":62 516 text2 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\lib\LCDLIBRARY1.h":63 51A text2 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\lib\LCDLIBRARY1.h":64 51F text2 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\lib\LCDLIBRARY1.h":65 525 text2 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\lib\LCDLIBRARY1.h":56 52A text2 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\lib\LCDLIBRARY1.h":233 52F text4 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\lib\LCDLIBRARY1.h":235 52F text4 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\lib\LCDLIBRARY1.h":236 533 text4 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\lib\LCDLIBRARY1.h":237 538 text4 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\lib\LCDLIBRARY1.h":239 53D text4 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\lib\LCDLIBRARY1.h":240 541 text4 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\lib\LCDLIBRARY1.h":241 546 text4 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\lib\LCDLIBRARY1.h":243 54B text4 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\lib\LCDLIBRARY1.h":244 54F text4 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\lib\LCDLIBRARY1.h":245 554 text4 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\lib\LCDLIBRARY1.h":247 559 text4 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\lib\LCDLIBRARY1.h":248 55D text4 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\lib\LCDLIBRARY1.h":249 562 text4 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\lib\LCDLIBRARY1.h":251 567 text4 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\lib\LCDLIBRARY1.h":252 56A text4 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\lib\LCDLIBRARY1.h":253 56F text4 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\lib\LCDLIBRARY1.h":254 573 text4 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\lib\LCDLIBRARY1.h":255 578 text4 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\lib\LCDLIBRARY1.h":257 57D text4 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\lib\LCDLIBRARY1.h":258 580 text4 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\lib\LCDLIBRARY1.h":259 585 text4 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\lib\LCDLIBRARY1.h":260 589 text4 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":13 58D text1 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":14 58D text1 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":15 58E text1 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":16 595 text1 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":17 599 text1 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":18 59A text1 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":19 5A1 text1 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":20 5A5 text1 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":21 5A6 text1 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":22 5AD text1 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":23 5B1 text1 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":24 5B2 text1 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":25 5B9 text1 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":26 5BD text1 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":27 5BE text1 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":28 5C5 text1 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":29 5C9 text1 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":30 5CA text1 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":31 5D1 text1 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":32 5D5 text1 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":33 5D6 text1 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":34 5DD text1 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":35 5E1 text1 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":36 5E2 text1 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":37 5E9 text1 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":38 5ED text1 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":39 5EE text1 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":40 5F5 text1 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":41 5F9 text1 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":42 5FA text1 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":43 601 text1 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":44 605 text1 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":45 606 text1 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":46 60D text1 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":47 611 text1 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":48 612 text1 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":49 619 text1 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":50 61D text1 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":51 61E text1 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":52 625 text1 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":53 629 text1 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":54 62A text1 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":55 631 text1 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":57 635 text1 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":14 636 text1 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":58 684 text1 CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":59 685 maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":61 685 maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":62 689 maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":63 68B maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":64 68D maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":65 68E maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":66 68F maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":67 690 maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":69 697 maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":70 699 maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":72 69B maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":73 69D maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":75 6A2 maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":83 6A5 maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":84 6A6 maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":85 6A7 maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":86 6AB maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":87 6AE maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":89 6B0 maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":90 6B5 maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":87 6B8 maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":93 6B9 maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":94 6BD maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":95 6C0 maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":97 6C2 maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":98 6C7 maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":95 6CA maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":101 6CB maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":102 6CF maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":103 6D2 maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":105 6D4 maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":106 6D9 maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":103 6DC maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":109 6DD maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":110 6E1 maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":111 6E4 maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":113 6E6 maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":114 6EB maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":111 6EE maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":117 6EF maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":118 6F3 maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":119 6F6 maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":121 6F8 maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":122 6FD maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":119 700 maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":125 701 maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":126 705 maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":127 708 maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":129 70A maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":130 70F maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":127 712 maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":133 713 maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":134 717 maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":135 71A maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":136 71C maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":137 721 maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":135 724 maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":140 725 maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":141 729 maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":142 72C maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":144 72E maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":145 733 maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":142 736 maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":148 737 maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":149 73B maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":150 73E maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":152 740 maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":153 745 maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":150 748 maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":156 749 maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":157 74D maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":158 750 maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":160 752 maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":161 757 maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":158 75A maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":164 75B maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":165 75F maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":166 762 maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":168 764 maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":169 769 maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":166 76C maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":172 76D maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":173 771 maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":174 774 maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":176 776 maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":177 77B maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":174 77E maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":180 77F maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":181 783 maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":182 786 maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":184 788 maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":185 78D maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":182 790 maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":186 791 maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":187 792 maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":188 793 maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":190 794 maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":84 795 maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":191 7E1 maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":192 7E6 maintext CODE
+"C:\Users\Sirtom\Desktop\Hardware Training\Keyboard.X\keyboard.c":74 7E9 maintext CODE
+"C:\Users\Sirtom\AppData\Local\Temp\s368.":603 7EA cinit CODE
+"C:\Users\Sirtom\AppData\Local\Temp\s368.":606 7EA cinit CODE
+"C:\Users\Sirtom\AppData\Local\Temp\s368.":628 7EA cinit CODE
+"C:\Users\Sirtom\AppData\Local\Temp\s368.":629 7EB cinit CODE
+"C:\Users\Sirtom\AppData\Local\Temp\s368.":630 7EC cinit CODE
+"C:\Users\Sirtom\AppData\Local\Temp\s368.":631 7ED cinit CODE
+"C:\Users\Sirtom\AppData\Local\Temp\s368.":632 7EE cinit CODE
+"C:\Users\Sirtom\AppData\Local\Temp\s368.":633 7EF cinit CODE
+"C:\Users\Sirtom\AppData\Local\Temp\s368.":665 7F0 cinit CODE
+"C:\Users\Sirtom\AppData\Local\Temp\s368.":666 7F1 cinit CODE
+"C:\Users\Sirtom\AppData\Local\Temp\s368.":667 7F2 cinit CODE
+"C:\Users\Sirtom\AppData\Local\Temp\s368.":668 7F3 cinit CODE
+"C:\Users\Sirtom\AppData\Local\Temp\s368.":669 7F4 cinit CODE
+"C:\Users\Sirtom\AppData\Local\Temp\s368.":670 7F5 cinit CODE
+"C:\Users\Sirtom\AppData\Local\Temp\s368.":671 7F6 cinit CODE
+"C:\Users\Sirtom\AppData\Local\Temp\s368.":672 7F7 cinit CODE
+"C:\Users\Sirtom\AppData\Local\Temp\s368.":673 7F8 cinit CODE
+"C:\Users\Sirtom\AppData\Local\Temp\s368.":674 7F9 cinit CODE
+"C:\Users\Sirtom\AppData\Local\Temp\s368.":680 7FC cinit CODE
+"C:\Users\Sirtom\AppData\Local\Temp\s368.":681 7FC cinit CODE
+"C:\Users\Sirtom\AppData\Local\Temp\s368.":682 7FD cinit CODE
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__CFG_WRT$OFF 0 0 ABS 0 - dist/default/production\Keyboard.X.production.obj
+_RA0 28 0 ABS 0 - dist/default/production\Keyboard.X.production.obj
+_RB0 30 0 ABS 0 - dist/default/production\Keyboard.X.production.obj
+_RA1 29 0 ABS 0 - dist/default/production\Keyboard.X.production.obj
+_RB1 31 0 ABS 0 - dist/default/production\Keyboard.X.production.obj
+_RA2 2A 0 ABS 0 - dist/default/production\Keyboard.X.production.obj
+_RB2 32 0 ABS 0 - dist/default/production\Keyboard.X.production.obj
+_RA3 2B 0 ABS 0 - dist/default/production\Keyboard.X.production.obj
+_RA4 2C 0 ABS 0 - dist/default/production\Keyboard.X.production.obj
+_RC3 3B 0 ABS 0 - dist/default/production\Keyboard.X.production.obj
+_RB4 34 0 ABS 0 - dist/default/production\Keyboard.X.production.obj
+_RA5 2D 0 ABS 0 - dist/default/production\Keyboard.X.production.obj
+_RB5 35 0 ABS 0 - dist/default/production\Keyboard.X.production.obj
+_RD4 44 0 ABS 0 - dist/default/production\Keyboard.X.production.obj
+_RB6 36 0 ABS 0 - dist/default/production\Keyboard.X.production.obj
+_RD5 45 0 ABS 0 - dist/default/production\Keyboard.X.production.obj
+_RB7 37 0 ABS 0 - dist/default/production\Keyboard.X.production.obj
+_RD7 47 0 ABS 0 - dist/default/production\Keyboard.X.production.obj
+_PR2 92 0 ABS 0 - dist/default/production\Keyboard.X.production.obj
+__S0 2008 0 ABS 0 - -
+__S1 7E 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__size_of_config 0 0 ABS 0 - dist/default/production\Keyboard.X.production.obj
+_NUM 78 0 COMMON 1 bssCOMMON dist/default/production\Keyboard.X.production.obj
+__Hintentry 0 0 CODE 0 intentry -
+__Lintentry 0 0 CODE 0 intentry -
+__CFG_BOREN$ON 0 0 ABS 0 - dist/default/production\Keyboard.X.production.obj
+_lcd B1A 0 CODE 0 text1 dist/default/production\Keyboard.X.production.obj
+_TMR2 11 0 ABS 0 - dist/default/production\Keyboard.X.production.obj
+_main D0A 0 CODE 0 maintext dist/default/production\Keyboard.X.production.obj
+_logo 20 0 BANK0 1 dataBANK0 dist/default/production\Keyboard.X.production.obj
+__end_of_CURSOR 996 0 CODE 0 text3 dist/default/production\Keyboard.X.production.obj
+___sp 0 0 STACK 2 stack C:\Users\Sirtom\AppData\Local\Temp\s368.obj
+btemp 7E 0 ABS 0 - dist/default/production\Keyboard.X.production.obj
+__end_ofexp@coeff 4E 0 STRING 0 strings dist/default/production\Keyboard.X.production.obj
+ltemp 7E 0 ABS 0 - dist/default/production\Keyboard.X.production.obj
+ttemp 7E 0 ABS 0 - dist/default/production\Keyboard.X.production.obj
+wtemp 7E 0 ABS 0 - dist/default/production\Keyboard.X.production.obj
+start 0 0 CODE 0 init C:\Users\Sirtom\AppData\Local\Temp\s368.obj
+_TRISA 85 0 ABS 0 - dist/default/production\Keyboard.X.production.obj
+_TRISB 86 0 ABS 0 - dist/default/production\Keyboard.X.production.obj
+_CLOCK 926 0 CODE 0 text7 dist/default/production\Keyboard.X.production.obj
+_TRISC 87 0 ABS 0 - dist/default/production\Keyboard.X.production.obj
+_PORTA 5 0 ABS 0 - dist/default/production\Keyboard.X.production.obj
+reset_vec 0 0 CODE 0 reset_vec C:\Users\Sirtom\AppData\Local\Temp\s368.obj
+_TRISD 88 0 ABS 0 - dist/default/production\Keyboard.X.production.obj
+_PORTB 6 0 ABS 0 - dist/default/production\Keyboard.X.production.obj
+_TRISE 89 0 ABS 0 - dist/default/production\Keyboard.X.production.obj
+_PORTC 7 0 ABS 0 - dist/default/production\Keyboard.X.production.obj
+_PORTD 8 0 ABS 0 - dist/default/production\Keyboard.X.production.obj
+_T2CON 12 0 ABS 0 - dist/default/production\Keyboard.X.production.obj
+_PORTE 9 0 ABS 0 - dist/default/production\Keyboard.X.production.obj
+ltemp0 7E 0 ABS 0 - dist/default/production\Keyboard.X.production.obj
+ttemp0 7E 0 ABS 0 - dist/default/production\Keyboard.X.production.obj
+wtemp0 7E 0 ABS 0 - dist/default/production\Keyboard.X.production.obj
+ltemp1 82 0 ABS 0 - dist/default/production\Keyboard.X.production.obj
+ttemp1 81 0 ABS 0 - dist/default/production\Keyboard.X.production.obj
+wtemp1 80 0 ABS 0 - dist/default/production\Keyboard.X.production.obj
+ltemp2 86 0 ABS 0 - dist/default/production\Keyboard.X.production.obj
+ttemp2 84 0 ABS 0 - dist/default/production\Keyboard.X.production.obj
+wtemp2 82 0 ABS 0 - dist/default/production\Keyboard.X.production.obj
+ltemp3 80 0 ABS 0 - dist/default/production\Keyboard.X.production.obj
+ttemp3 87 0 ABS 0 - dist/default/production\Keyboard.X.production.obj
+wtemp3 84 0 ABS 0 - dist/default/production\Keyboard.X.production.obj
+ttemp4 7F 0 ABS 0 - dist/default/production\Keyboard.X.production.obj
+wtemp4 86 0 ABS 0 - dist/default/production\Keyboard.X.production.obj
+wtemp5 88 0 ABS 0 - dist/default/production\Keyboard.X.production.obj
+wtemp6 7F 0 ABS 0 - dist/default/production\Keyboard.X.production.obj
+__Hconfig 4010 0 CONFIG 0 config -
+__Lconfig 400E 0 CONFIG 0 config -
+__end_of__stringtab 12 0 STRING 0 strings dist/default/production\Keyboard.X.production.obj
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+__end_of__stringdata 1CA 0 STRING 0 strings dist/default/production\Keyboard.X.production.obj
+_errno 7C 0 COMMON 1 bssCOMMON dist/default/production\Keyboard.X.production.obj
+__size_of_CURSOR 0 0 ABS 0 - dist/default/production\Keyboard.X.production.obj
+__Hfunctab 0 0 CODE 0 functab -
+__Lfunctab 0 0 CODE 0 functab -
+_ADCON1 9F 0 ABS 0 - dist/default/production\Keyboard.X.production.obj
+__Hcommon 0 0 ABS 0 common -
+__Lcommon 0 0 ABS 0 common -
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+___int_sp 0 0 STACK 2 stack C:\Users\Sirtom\AppData\Local\Temp\s368.obj
+_CCPR1L 15 0 ABS 0 - dist/default/production\Keyboard.X.production.obj
+_TMR2ON 92 0 ABS 0 - dist/default/production\Keyboard.X.production.obj
+__Habs1 0 0 ABS 0 abs1 -
+__Labs1 0 0 ABS 0 abs1 -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+_delay1 8FA 0 CODE 0 text6 dist/default/production\Keyboard.X.production.obj
+_delay2 8E6 0 CODE 0 text8 dist/default/production\Keyboard.X.production.obj
+_CURSOR 966 0 CODE 0 text3 dist/default/production\Keyboard.X.production.obj
+init_fetch0 944 0 CODE 0 inittext dist/default/production\Keyboard.X.production.obj
+__Hcode 0 0 ABS 0 code -
+__Lcode 0 0 ABS 0 code -
+_config A5E 0 CODE 0 text4 dist/default/production\Keyboard.X.production.obj
+stackhi 0 0 ABS 0 - C:\Users\Sirtom\AppData\Local\Temp\s368.obj
+stacklo 0 0 ABS 0 - C:\Users\Sirtom\AppData\Local\Temp\s368.obj
+__Hinit 0 0 CODE 0 init -
+__Linit 0 0 CODE 0 init -
+__end_of_main FD4 0 CODE 0 maintext dist/default/production\Keyboard.X.production.obj
+__Htext 0 0 ABS 0 text -
+__Ltext 0 0 ABS 0 text -
+__end_of_delay2 8FA 0 CODE 0 text8 dist/default/production\Keyboard.X.production.obj
+__HdataBANK0 0 0 ABS 0 dataBANK0 -
+__LdataBANK0 0 0 ABS 0 dataBANK0 -
+__CFG_LVP$ON 0 0 ABS 0 - dist/default/production\Keyboard.X.production.obj
+__pdataBANK0 20 0 BANK0 1 dataBANK0 dist/default/production\Keyboard.X.production.obj
+__size_of_lcd 0 0 ABS 0 - dist/default/production\Keyboard.X.production.obj
+end_of_initialization FF8 0 CODE 0 cinit dist/default/production\Keyboard.X.production.obj
+__stringtab 6 0 STRING 0 strings dist/default/production\Keyboard.X.production.obj
+_PORTDbits 8 0 ABS 0 - dist/default/production\Keyboard.X.production.obj
+__Hstrings 0 0 ABS 0 strings -
+__Lstrings 0 0 ABS 0 strings -
+__pstrings 6 0 STRING 0 strings dist/default/production\Keyboard.X.production.obj
+_CCP1CON 17 0 ABS 0 - dist/default/production\Keyboard.X.production.obj
+__Hbank0 0 0 ABS 0 bank0 -
+__Lbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Lbank3 0 0 ABS 0 bank3 -
+___latbits 2 0 ABS 0 - dist/default/production\Keyboard.X.production.obj
+__Hpowerup 0 0 CODE 0 powerup -
+__Lpowerup 0 0 CODE 0 powerup -
+_CLRDISP 996 0 CODE 0 text5 dist/default/production\Keyboard.X.production.obj
+__ptext1 B1A 0 CODE 0 text1 dist/default/production\Keyboard.X.production.obj
+__ptext2 9CC 0 CODE 0 text2 dist/default/production\Keyboard.X.production.obj
+__ptext3 966 0 CODE 0 text3 dist/default/production\Keyboard.X.production.obj
+__ptext4 A5E 0 CODE 0 text4 dist/default/production\Keyboard.X.production.obj
+__ptext5 996 0 CODE 0 text5 dist/default/production\Keyboard.X.production.obj
+__ptext6 8FA 0 CODE 0 text6 dist/default/production\Keyboard.X.production.obj
+__ptext7 926 0 CODE 0 text7 dist/default/production\Keyboard.X.production.obj
+CURSOR@a 73 0 COMMON 1 cstackCOMMON dist/default/production\Keyboard.X.production.obj
+__ptext8 8E6 0 CODE 0 text8 dist/default/production\Keyboard.X.production.obj
+CURSOR@b 72 0 COMMON 1 cstackCOMMON dist/default/production\Keyboard.X.production.obj
+__Hclrtext 0 0 ABS 0 clrtext -
+__Lclrtext 0 0 ABS 0 clrtext -
+__end_of_CLOCK 944 0 CODE 0 text7 dist/default/production\Keyboard.X.production.obj
+__end_of__initialization FF8 0 CODE 0 cinit dist/default/production\Keyboard.X.production.obj
+__end_of_config B1A 0 CODE 0 text4 dist/default/production\Keyboard.X.production.obj
+__Hidloc 0 0 IDLOC 0 idloc -
+__Lidloc 0 0 IDLOC 0 idloc -
+__Hstack 0 0 STACK 2 stack -
+__Lstack 0 0 STACK 2 stack -
+__Hspace_0 2008 0 ABS 0 - -
+__Lspace_0 0 0 ABS 0 - -
+__Hspace_1 7E 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Hcinit 1000 0 CODE 0 cinit -
+__Lcinit FD4 0 CODE 0 cinit -
+__CFG_FOSC$HS 0 0 ABS 0 - dist/default/production\Keyboard.X.production.obj
+__Hspace_3 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__size_of_main 0 0 ABS 0 - dist/default/production\Keyboard.X.production.obj
+LCDWRITE@P 77 0 COMMON 1 cstackCOMMON dist/default/production\Keyboard.X.production.obj
+__size_of_delay2 0 0 ABS 0 - dist/default/production\Keyboard.X.production.obj
+__HidataBANK0 0 0 ABS 0 idataBANK0 -
+__LidataBANK0 0 0 ABS 0 idataBANK0 -
+__pidataBANK0 90E 0 CODE 0 idataBANK0 dist/default/production\Keyboard.X.production.obj
+__end_of_lcd D0A 0 CODE 0 text1 dist/default/production\Keyboard.X.production.obj
+__end_of_LCDWRITE A5E 0 CODE 0 text2 dist/default/production\Keyboard.X.production.obj
+__CFG_PWRTE$OFF 0 0 ABS 0 - dist/default/production\Keyboard.X.production.obj
+__HbssCOMMON 0 0 ABS 0 bssCOMMON -
+__LbssCOMMON 0 0 ABS 0 bssCOMMON -
+__pbssCOMMON 78 0 COMMON 1 bssCOMMON dist/default/production\Keyboard.X.production.obj
+__Hend_init 6 0 CODE 0 end_init -
+__Lend_init 0 0 CODE 0 end_init -
+__Hreset_vec 0 0 CODE 0 reset_vec -
+__Lreset_vec 0 0 CODE 0 reset_vec -
+_LCDWRITE 9CC 0 CODE 0 text2 dist/default/production\Keyboard.X.production.obj
+__size_of_CLRDISP 0 0 ABS 0 - dist/default/production\Keyboard.X.production.obj
+__stringdata 84 0 STRING 0 strings dist/default/production\Keyboard.X.production.obj
+__end_oflog@coeff 84 0 STRING 0 strings dist/default/production\Keyboard.X.production.obj
+init_ram0 94C 0 CODE 0 inittext dist/default/production\Keyboard.X.production.obj
+intlevel0 0 0 CODE 0 functab C:\Users\Sirtom\AppData\Local\Temp\s368.obj
+__CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production\Keyboard.X.production.obj
+intlevel1 0 0 CODE 0 functab C:\Users\Sirtom\AppData\Local\Temp\s368.obj
+intlevel2 0 0 CODE 0 functab C:\Users\Sirtom\AppData\Local\Temp\s368.obj
+intlevel3 0 0 CODE 0 functab C:\Users\Sirtom\AppData\Local\Temp\s368.obj
+intlevel4 0 0 CODE 0 functab C:\Users\Sirtom\AppData\Local\Temp\s368.obj
+intlevel5 0 0 CODE 0 functab C:\Users\Sirtom\AppData\Local\Temp\s368.obj
+LCDWRITE@i 76 0 COMMON 1 cstackCOMMON dist/default/production\Keyboard.X.production.obj
+LCDWRITE@j 74 0 COMMON 1 cstackCOMMON dist/default/production\Keyboard.X.production.obj
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\Keyboard.X.production.obj
+LCDWRITE@k 75 0 COMMON 1 cstackCOMMON dist/default/production\Keyboard.X.production.obj
+__CFG_CPD$OFF 0 0 ABS 0 - dist/default/production\Keyboard.X.production.obj
+start_initialization FD4 0 CODE 0 cinit dist/default/production\Keyboard.X.production.obj
+__size_of_LCDWRITE 0 0 ABS 0 - dist/default/production\Keyboard.X.production.obj
+__Hmaintext 0 0 ABS 0 maintext -
+__Lmaintext 0 0 ABS 0 maintext -
+__pmaintext D0A 0 CODE 0 maintext dist/default/production\Keyboard.X.production.obj
+__Hinittext 0 0 ABS 0 inittext -
+__Linittext 0 0 ABS 0 inittext -
+__size_of_delay1 0 0 ABS 0 - dist/default/production\Keyboard.X.production.obj
+__end_of_CLRDISP 9CC 0 CODE 0 text5 dist/default/production\Keyboard.X.production.obj
+__initialization FD4 0 CODE 0 cinit dist/default/production\Keyboard.X.production.obj
+__stringbase 10 0 STRING 0 strings dist/default/production\Keyboard.X.production.obj
+__size_of_CLOCK 0 0 ABS 0 - dist/default/production\Keyboard.X.production.obj
+__end_of_delay1 90E 0 CODE 0 text6 dist/default/production\Keyboard.X.production.obj
+__CFG_CP$OFF 0 0 ABS 0 - dist/default/production\Keyboard.X.production.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect in on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+reset_vec 0 0 0 3 2
+cinit 0 7EA FD4 16 2
+config 0 2007 400E 1 2
+cstackCOMMON 1 70 70 E 1
+dataBANK0 1 20 20 C 1
+maintext 0 685 D0A 165 2
+text1 0 58D B1A F8 2
+strings 0 3 6 E2 2
+text4 0 52F A5E 5E 2
+text2 0 4E6 9CC 49 2
+text5 0 4CB 996 1B 2
+text3 0 4B3 966 18 2
+inittext 0 4A2 944 11 2
+text7 0 493 926 F 2
+idataBANK0 0 487 90E C 2
+text6 0 47D 8FA A 2
+text8 0 473 8E6 A 2
